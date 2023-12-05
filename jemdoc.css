@@ -60,7 +60,7 @@ body {
     vertical-align: top;
 }
 #clustrmaps-container {
-    width: 30%; /* 30% of the parent element's width */
+    width: 100pt; /* 30% of the parent element's width */
     /* Optional: if you want to center the map within the container */
     margin: 0 auto;
 }
