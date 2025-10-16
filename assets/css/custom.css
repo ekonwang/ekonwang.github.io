@@ -1,0 +1,13 @@
+/* Custom overrides and additions */
+
+/* Secondary name (Chinese) under main name */
+.name-zh {
+  font-size: 28px;
+  font-weight: 500;
+  color: #043361;
+}
+
+@media (prefers-color-scheme: dark) {
+  .name-zh { color: #3eb7f0; }
+}
+
