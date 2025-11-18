@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization">
+  <meta name="keywords" content="GeoVista, Geolocalization, Agentic, Visual Reasoning">
+  <title>GeoVista</title>
+
+  <!-- Styles from the Visual-Agent template -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="/icon.webp">
+
+  <!-- Scripts from the Visual-Agent template -->
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    /* Minor tweaks for this page */
+    .publication-subtitle { margin-bottom: 20px; }
+    .section img { max-width: 100%; height: auto; }
+    /* Teaser scroll styles */
+    .teaser-scroll-container { max-width: 100%; }
+    .teaser-scroll-wrapper {
+      overflow-x: auto;
+      border-radius: 8px;
+      /* full-bleed viewport width */
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      /* hide native scrollbar visuals while allowing programmatic scroll */
+      scrollbar-width: none;          /* Firefox */
+      -ms-overflow-style: none;       /* IE/Edge */
+    }
+    .teaser-scroll-wrapper::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+    .teaser-img-large {
+      width: 200% !important; /* Show half of the image by default (wrapper is 100vw) */
+      max-width: none !important; /* override generic .section img { max-width:100% } */
+      height: auto;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    .teaser-slider-row {
+      margin-top: 12px;
+      /* half of the viewport width and centered */
+      width: 50vw;
+      margin-left: calc(50% - 25vw);
+      padding: 0 8px;
+    }
+
+    /* Inline icon tweaks for buttons */
+    .publication-links .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .publication-links .icon svg {
+      width: 1.05em;
+      height: 1.05em;
+      vertical-align: -0.125em;
+    }
+    .publication-links .icon .emoji {
+      font-size: 18px;
+      line-height: 1;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Minimal navbar to keep template style; add a Home link -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="/">Home</a>
+      </div>
+    </div> -->
+  </nav>
+
+  <!-- Header -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title is-bold">GeoVista</h1>
+            <h2 class="subtitle is-2 publication-subtitle">
+              Web-Augmented Agentic Visual Reasoning for Geolocalization
+            </h2>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Yikun Wang<sup>1,2</sup>,</span>
+              <span class="author-block">Zuyan Liu<sup>3</sup>,</span>
+              <span class="author-block">Ziyi Wang<sup>3</sup>,</span>
+              <span class="author-block">Han Hu<sup>4</sup>,</span>
+              <span class="author-block">Pengfei Liu<sup>2</sup>,</span>
+              <span class="author-block">Yongming Rao<sup>4</sup></span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>1</sup>Fudan University</span>
+              <span class="author-block"><sup>2</sup>Shanghai Innovation Institute</span>
+              <span class="author-block"><sup>3</sup>Tsinghua University</span>
+              <span class="author-block"><sup>4</sup>Tencent Hunyuan</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="./assets/GeoVista__Web_Augmented_Agentic_Visual_Reasoning_for_Geolocalization.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true">
+                      <!-- Simple file/PDF icon -->
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PDF">
+                        <path d="M6 2h8l4 4v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" stroke="#e11d48" stroke-width="1.5" fill="none"/>
+                        <path d="M14 2v4h4" stroke="#e11d48" stroke-width="1.5" fill="none"/>
+                        <rect x="6" y="14" width="12" height="5" rx="1" fill="#e11d48"/>
+                        <path d="M8 18v-3h1.2c.8 0 1.3.4 1.3 1s-.5 1-1.3 1H8zm3.3 0v-3h.9c.9 0 1.3.5 1.3 1.2 0 .8-.4 1.8-1.5 1.8h-.7zm3.1 0v-3h2" stroke="#fff" stroke-width="1"/>
+                      </svg>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/ekonwang/GeoVista" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true">
+                      <!-- Simple code icon: angle brackets -->
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Code">
+                        <path d="M8 16l-4-4 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 8l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 4l-4 16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/LibraTree/GeoVista-RL-6k-7B" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true"><span class="emoji">🤗</span></span>
+                    <span>GeoVista-RL</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/LibraTree/GeoBench" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true"><span class="emoji">🤗</span></span>
+                    <span>GeoBench</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser with horizontal slider -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="teaser-scroll-container">
+        <div class="teaser-scroll-wrapper" id="teaser-wrapper">
+          <img class="teaser-img-large" id="teaser-img" src="./assets/teaser.png" alt="GeoVista teaser" />
+        </div>
+        <div class="teaser-slider-row">
+          <input id="teaser-slider" class="slider is-fullwidth" step="0.5" min="0" max="100" value="37.5" type="range">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified" id="abstract-text">
+            <p>
+              Current research on agentic visual reasoning enables deep multimodal understanding but primarily focuses on image manipulation tools, leaving a gap toward more general-purpose agentic models. In this work, we revisit the geolocation task, which requires not only nuanced visual grounding but also web search to confirm or refine hypotheses during reasoning. Since existing geolocation benchmarks fail to meet the need for high-resolution imagery and the localization challenge for deep agentic reasoning, we curate <b>GeoBench</b>, a benchmark that includes photos and panoramas from around the world, along with a subset of satellite images of different cities to rigorously evaluate the geolocation ability of agentic models.
+            </p>
+            <p>
+              We also propose <b>GeoVista</b>, an agentic model that seamlessly integrates tool invocation within the reasoning loop, including an image-zoom-in tool to magnify regions of interest and a web-search tool to retrieve related web information. We develop a complete training pipeline for it, including a cold-start supervised fine-tuning (SFT) stage to learn reasoning patterns and tool-use priors, followed by a reinforcement learning (RL) stage to further enhance reasoning ability. We adopt a hierarchical reward to leverage multi-level geographical information and improve overall geolocation performance.
+            </p>
+            <p>
+              Experimental results show that <b>GeoVista</b> surpasses other open-source agentic models on the geolocation task greatly and achieves performance comparable to closed-source models such as Gemini-2.5-flash and GPT-5 on most metrics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benchmark -->
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1" id="benchmark">Benchmark</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./assets/evaluation-level-wise.png" alt="Level-wise evaluation" />
+              <p><b>The evaluation pipeline of GeoBench dataset</b>. The evaluation system consists of (1) Level-wise evaluation, which employs both rule-based and model-based verifiers to determine correctness at different administrative levels, and (2) nuanced evaluation, which extracts the predicted address, applies geocoding to obtain the predicted geolocalization point, and computes the haversine distance to the ground-truth location.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 90%;">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./assets/evaluation-nuanced.png" alt="Nuanced evaluation" />
+              <!-- <p>Illustration of GeoBench Benchmark.</p> -->
+              <p>GeoBench is the <b>first</b> benchmark to evaluate agentic models’ general <b></b>geolocalization</b> ability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiments -->
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1" id="experiments">Experiments</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./assets/experiments-level-wise.png" alt="Experiments level-wise" />
+              <p>Experiments: level-wise evaluation results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 50%;">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./assets/experiments-nuanced-evaluation.png" alt="Experiments nuanced evaluation" />
+              <p>Experiments: nuanced evaluation results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./assets/experiments-hierarchical-reward.png" alt="Experiments hierarchical reward" />
+              <p>As geolocalization data have multi-level labels, a reward that only grants credit when the model predicts the correct city does not fully utilize the hierarchical information. Under this simple reward, the model underperforms and makes fewer tool calls. To address this, we adopt a hierarchical reward to fully leverage the multi-level structure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Curation -->
+  <!-- <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1" id="data-curation">Data Curation</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-centered">
+            <img src="./assets/data-curation.png" alt="Data curation" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Citation -->
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1" id="citation">Citation</h1>
+    </div>
+  </section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <pre><code>
+@misc{wang2025geovista,
+  title={GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization},
+  author={Yikun Wang et al.},
+  year={2025},
+  url={https://github.com/ekonwang/GeoVista},
+}
+      </code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered"></div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p style="text-align: center;">
+            This website is adapted from
+            <a href="https://nerfies.github.io/">Nerfies</a> and
+            <a href="https://mathvista.github.io/">MathVista</a>.
+            <br>
+            Licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
