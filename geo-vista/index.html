@@ -217,7 +217,10 @@
         <div class="column is-four-fifths" style="width: 80%;">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./assets/evaluation-level-wise.png" alt="Level-wise evaluation" />
+              <picture>
+                <source type="image/webp" srcset="./assets/evaluation-level-wise.webp">
+                <img src="./assets/evaluation-level-wise.png" alt="Level-wise evaluation" loading="lazy" decoding="async" />
+              </picture>
               <p><b>The evaluation pipeline of GeoBench dataset</b>. The evaluation system consists of (1) Level-wise evaluation, which employs both rule-based and model-based verifiers to determine correctness at different administrative levels, and (2) nuanced evaluation, which extracts the predicted address, applies geocoding to obtain the predicted geolocalization point, and computes the haversine distance to the ground-truth location.</p>
             </div>
           </div>
@@ -227,7 +230,10 @@
         <div class="column is-four-fifths" style="width: 90%;">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./assets/evaluation-nuanced.png" alt="Nuanced evaluation" />
+              <picture>
+                <source type="image/webp" srcset="./assets/evaluation-nuanced.webp">
+                <img src="./assets/evaluation-nuanced.png" alt="Nuanced evaluation" loading="lazy" decoding="async" />
+              </picture>
               <!-- <p>Illustration of GeoBench Benchmark.</p> -->
               <p>GeoBench is the <b>first</b> benchmark to evaluate agentic models’ general <b></b>geolocalization</b> ability.</p>
             </div>
@@ -249,7 +255,10 @@
         <div class="column is-four-fifths" style="width: 80%;">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./assets/experiments-level-wise.png" alt="Experiments level-wise" />
+              <picture>
+                <source type="image/webp" srcset="./assets/experiments-level-wise.webp">
+                <img src="./assets/experiments-level-wise.png" alt="Experiments level-wise" loading="lazy" decoding="async" />
+              </picture>
               <p><strong>The Comparison on GeoBench.</strong> The <strong>bold</strong>
 figures indicate the best performance among closed-source and open-source
   models, and the <u>underlined</u> figures indicate open-source results that
@@ -262,7 +271,10 @@ figures indicate the best performance among closed-source and open-source
         <div class="column is-four-fifths" style="width: 50%;">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./assets/experiments-nuanced-evaluation.png" alt="Experiments nuanced evaluation" />
+              <picture>
+                <source type="image/webp" srcset="./assets/experiments-nuanced-evaluation.webp">
+                <img src="./assets/experiments-nuanced-evaluation.png" alt="Experiments nuanced evaluation" loading="lazy" decoding="async" />
+              </picture>
               <p><strong>Nuanced distance statistics of different models' performance
   on GeoBench.</strong> The <strong>bold</strong> figures indicate the best
   performance among closed-source and open-source models.</p>
@@ -274,7 +286,10 @@ figures indicate the best performance among closed-source and open-source
         <div class="column is-four-fifths" style="width: 80%;">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./assets/experiments-hierarchical-reward.png" alt="Experiments hierarchical reward" />
+              <picture>
+                <source type="image/webp" srcset="./assets/experiments-hierarchical-reward.webp">
+                <img src="./assets/experiments-hierarchical-reward.png" alt="Experiments hierarchical reward" loading="lazy" decoding="async" />
+              </picture>
               <p>A reward that only grants credit when the model predicts the correct city / country ignore geolocalization’s label hierarchy, causing underperformance and fewer tool calls; we instead use a hierarchical reward to fully exploit the structure.</p>
             </div>
           </div>
@@ -294,7 +309,10 @@ figures indicate the best performance among closed-source and open-source
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="content has-text-centered">
-            <img src="./assets/data-curation.png" alt="Data curation" />
+            <picture>
+              <source type="image/webp" srcset="./assets/data-curation.webp">
+              <img src="./assets/data-curation.png" alt="Data curation" loading="lazy" decoding="async" />
+            </picture>
           </div>
         </div>
       </div>
