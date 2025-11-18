@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
       var pct = Number(teaserSlider.value) / 100;
       teaserWrapper.scrollLeft = Math.round(maxScroll * pct);
     }
-    // Default to 3/8 (37.5%) from left
-    teaserSlider.value = 37.5;
+    // Default to 27% from left
+    teaserSlider.value = 27;
     // Update when slider moves
     teaserSlider.addEventListener('input', updateTeaserScroll);
     // Update once image has loaded (to ensure scrollWidth is known)
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         teaserImg.addEventListener('load', updateTeaserScroll);
       }
     }
-    // Initial update (ensure 3/8 position)
-    setTimeout(function(){ teaserSlider.value = 37.5; updateTeaserScroll(); }, 0);
+    // Initial update (ensure 27% position)
+    setTimeout(function(){ teaserSlider.value = 27; updateTeaserScroll(); }, 0);
   }
 });
