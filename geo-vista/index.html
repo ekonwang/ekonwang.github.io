@@ -246,7 +246,10 @@
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="./assets/experiments-level-wise.png" alt="Experiments level-wise" />
-              <p>Experiments: level-wise evaluation results.</p>
+              <p><strong>The Comparison on GeoBench.</strong> The <strong>bold</strong>
+figures indicate the best performance among closed-source and open-source
+  models, and the <u>underlined</u> figures indicate open-source results that
+  surpass at least one of their closed-source counterparts.</p>
             </div>
           </div>
         </div>
@@ -256,7 +259,9 @@
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="./assets/experiments-nuanced-evaluation.png" alt="Experiments nuanced evaluation" />
-              <p>Experiments: nuanced evaluation results.</p>
+              <p><strong>Nuanced distance statistics of different models' performance
+  on GeoBench.</strong> The <strong>bold</strong> figures indicate the best
+  performance among closed-source and open-source models.</p>
             </div>
           </div>
         </div>
@@ -266,7 +271,7 @@
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="./assets/experiments-hierarchical-reward.png" alt="Experiments hierarchical reward" />
-              <p>As geolocalization data have multi-level labels, a reward that only grants credit when the model predicts the correct city does not fully utilize the hierarchical information. Under this simple reward, the model underperforms and makes fewer tool calls. To address this, we adopt a hierarchical reward to fully leverage the multi-level structure.</p>
+              <p>A reward that only grants credit when the model predicts the correct city / country ignore geolocalization’s label hierarchy, causing underperformance and fewer tool calls; we instead use a hierarchical reward to fully exploit the structure.</p>
             </div>
           </div>
         </div>
