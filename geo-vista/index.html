@@ -37,7 +37,7 @@
     }
     .teaser-scroll-wrapper::-webkit-scrollbar { display: none; } /* Chrome/Safari */
     .teaser-img-large {
-      width: 200% !important; /* Show half of the image by default (wrapper is 100vw) */
+      width: 120% !important; /* Show ~5/6 of the image by default (wrapper is 100vw) */
       max-width: none !important; /* override generic .section img { max-width:100% } */
       height: auto;
       aspect-ratio: 6188 / 3201; /* keep teaser aspect for <img> or <object> */
@@ -47,9 +47,9 @@
     }
     .teaser-slider-row {
       margin-top: 12px;
-      /* half of the viewport width and centered */
-      width: 50vw;
-      margin-left: calc(50% - 25vw);
+      /* half of previous slider width (now 25vw) and centered */
+      width: 25vw;
+      margin-left: calc(50% - 12.5vw);
       padding: 0 8px;
     }
 
@@ -101,25 +101,26 @@
             </h2>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Yikun Wang<sup>1,2</sup>,</span>
+              <span class="author-block">Yikun Wang<sup>1,4</sup>,</span>
               <span class="author-block">Zuyan Liu<sup>3</sup>,</span>
               <span class="author-block">Ziyi Wang<sup>3</sup>,</span>
-              <span class="author-block">Han Hu<sup>4</sup>,</span>
-              <span class="author-block">Pengfei Liu<sup>2</sup>,</span>
-              <span class="author-block">Yongming Rao<sup>4</sup></span>
+              <span class="author-block">Han Hu<sup>2</sup>,</span>
+              <span class="author-block">Pengfei Liu<sup>4,5</sup>,</span>
+              <span class="author-block">Yongming Rao<sup>2</sup></span>
             </div>
 
             <div class="is-size-6 publication-authors">
               <span class="author-block"><sup>1</sup>Fudan University</span>
-              <span class="author-block"><sup>2</sup>Shanghai Innovation Institute</span>
+              <span class="author-block"><sup>2</sup>Tencent Hunyuan</span>
               <span class="author-block"><sup>3</sup>Tsinghua University</span>
-              <span class="author-block"><sup>4</sup>Tencent Hunyuan</span>
+              <span class="author-block"><sup>4</sup>Shanghai Innovation Institute</span>
+              <span class="author-block"><sup>5</sup>Shanghai Jiao Tong University</span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="./assets/GeoVista__Web_Augmented_Agentic_Visual_Reasoning_for_Geolocalization.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <a href="./assets/GeoVista__Web_Augmented_Agentic_Visual_Reasoning_for_Geolocalization__Preprint_.pdf" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon" aria-hidden="true">
                       <!-- Simple file/PDF icon -->
                       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PDF">
@@ -199,6 +200,33 @@
             <p>
               Experimental results show that <b>GeoVista</b> surpasses other open-source agentic models on the geolocation task greatly and achieves performance comparable to closed-source models such as Gemini-2.5-flash and GPT-5 on most metrics.
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- GeoVista -->
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1" id="geovista">GeoVista</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 90%;">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <picture>
+                <source type="image/webp" srcset="./assets/agentic-pipeline.webp">
+                <img src="./assets/agentic-pipeline.webp" alt="GeoVista agentic pipeline" loading="lazy" decoding="async" />
+              </picture>
+              <p><b>Image examples from GeoBench and the training data, and the agentic pipeline of GeoVista.</b>
+                Given a query and image, the policy model iteratively generates thoughts and actions; each action is parsed,
+                executed, and yields a new observation, repeating this loop until it outputs a final geolocation prediction or
+                reaches the maximum interaction turn limit.</p>
+            </div>
           </div>
         </div>
       </div>
