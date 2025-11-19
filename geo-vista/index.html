@@ -31,13 +31,19 @@
       /* full-bleed viewport width */
       width: 100vw;
       margin-left: calc(50% - 50vw);
+      /* Edge-offset parameter (in vw): when slider at extremes, image edge appears at center ± this offset */
+      --teaser-edge-offset-vw: 10; /* adjust this number (e.g., 8, 12) */
+      display: flex;
+      align-items: center;
       /* hide native scrollbar visuals while allowing programmatic scroll */
       scrollbar-width: none;          /* Firefox */
       -ms-overflow-style: none;       /* IE/Edge */
     }
     .teaser-scroll-wrapper::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+    .teaser-scroll-wrapper picture { flex: 0 0 auto; }
     .teaser-img-large {
-      width: 120% !important; /* Show ~5/6 of the image by default (wrapper is 100vw) */
+      /* Use viewport-relative width to avoid flex shrink issues */
+      width: calc(var(--teaser-image-width-vw, 80) * 1vw) !important;
       max-width: none !important; /* override generic .section img { max-width:100% } */
       height: auto;
       aspect-ratio: 6188 / 3201; /* keep teaser aspect for <img> or <object> */
@@ -51,6 +57,12 @@
       width: 25vw;
       margin-left: calc(50% - 12.5vw);
       padding: 0 8px;
+    }
+
+    .teaser-spacer {
+      flex: 0 0 auto;
+      width: calc(50vw - (var(--teaser-edge-offset-vw) * 1vw));
+      height: 1px;
     }
 
     /* Inline icon tweaks for buttons */
@@ -95,7 +107,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title is-bold">GeoVista</h1>
+            <h1 class="title is-1 publication-title is-bold">GeoVista:</h1>
             <h2 class="subtitle is-2 publication-subtitle">
               Web-Augmented Agentic Visual Reasoning for Geolocalization
             </h2>
@@ -172,13 +184,15 @@
     <div class="container is-max-desktop">
       <div class="teaser-scroll-container">
         <div class="teaser-scroll-wrapper" id="teaser-wrapper">
+          <div class="teaser-spacer" aria-hidden="true"></div>
           <picture>
             <source type="image/webp" srcset="./assets/teaser.webp">
             <img class="teaser-img-large" id="teaser-img" src="./assets/teaser.png" alt="GeoVista teaser" loading="eager" decoding="async" />
           </picture>
+          <div class="teaser-spacer" aria-hidden="true"></div>
         </div>
         <div class="teaser-slider-row">
-          <input id="teaser-slider" class="slider is-fullwidth" step="0.5" min="0" max="100" value="27" type="range">
+          <input id="teaser-slider" class="slider is-fullwidth" step="0.5" min="0" max="100" value="50" type="range">
         </div>
       </div>
     </div>
