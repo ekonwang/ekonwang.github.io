@@ -70,9 +70,37 @@
         <p>Hi, I am a Ph.D. student in <a href="https://en.wikipedia.org/wiki/Fudan_University">Fudan University</a> &amp; SII (Joint Program), currently supervised by <a href="https://dr.ntu.edu.sg/entities/person/Tao-Dacheng" target="_blank" rel="noopener">Prof. Dacheng Tao</a>. I conduct research on <strong>Multimodal LLMs</strong> and <strong>LLM agents</strong>. I currently work with <a href="https://scholar.google.com.hk/citations?user=oIz_CYEAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Pengfei Liu</a> in SII. Previously, I worked with <a href="https://scholar.google.com/citations?user=XfqR3yYAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Qi Zhang</a>, <a href="https://www.cs.emory.edu/~fliu40/" target="_blank" rel="noopener">Fei Liu</a>, and <a href="https://myownskyw7.github.io/" target="_blank" rel="noopener">Jiaqi Wang</a>.</p>
         <p>Please feel free to contact me for discussion and collaboration!</p>
 
-        <h2 id="publications" style="margin: 2px 0px 0px;">Publications <small>[<a href="https://scholar.google.co.uk/citations?hl=en&view_op=list_works&gmla=AH70aAWOWJyNkqpEEpmZcy3S6vctVLKLrmKkswkOwITM3ivjEFYBbnIWlPjUy4_LvLSAN9ub1KH7DvPxEXOfUpPLHw7E&user=4E7YCn4AAAAJ">Google Scholar</a>]</small></h2>
+        <h2 id="publications" style="margin: 2px 0px 0px;">Selected Publications <small>[<a href="https://scholar.google.co.uk/citations?hl=en&view_op=list_works&gmla=AH70aAWOWJyNkqpEEpmZcy3S6vctVLKLrmKkswkOwITM3ivjEFYBbnIWlPjUy4_LvLSAN9ub1KH7DvPxEXOfUpPLHw7E&user=4E7YCn4AAAAJ">Google Scholar</a>]</small></h2>
         <div class="publications">
           <ol class="bibliography">
+            <li>
+              <div class="pub-row">
+                <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                  <abbr class="badge">arXiv</abbr>
+                  <a href="https://arxiv.org/abs/2511.15705" target="_blank">
+                    <img class="teaser" src="./pics/assets/geovista.png" alt="GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization (arXiv 2025)" />
+                  </a>
+                </div>
+                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                  <div class="title"><a href="https://arxiv.org/abs/2511.15705">GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization</a></div>
+                  <div class="author"><strong>Yikun Wang</strong>, Zuyan Liu, Ziyi Wang, Pengfei Liu, Han Hu, Yongming Rao</div>
+                  <div class="periodical"><em>ArXiv Technical Report, 2025</em></div>
+                  <div class="links">
+                    <a href="https://arxiv.org/abs/2511.15705" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+                    <a href="https://ekonwang.github.io/geo-vista/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project</a>
+                    <a href="https://github.com/ekonwang/GeoVista" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;" data-repo="ekonwang/GeoVista">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                      Code
+                      <span class="star-badge" aria-label="GitHub Stars">
+                        <i class="far fa-star" aria-hidden="true"></i>
+                        <span class="star-count">—</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br />
             <li>
               <div class="pub-row">
                 <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
@@ -92,6 +120,7 @@
               </div>
             </li>
             <br />
+            <!--
             <li>
               <div class="pub-row">
                 <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
@@ -111,6 +140,7 @@
               </div>
             </li>
             <br />
+            -->
             <li>
               <div class="pub-row">
                 <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
@@ -223,6 +253,43 @@
         </center>
       </section>
     </div>
+
+    <!-- GitHub Stars (for Code buttons) -->
+    <script>
+      (function () {
+        function setStarCounts() {
+          var btns = document.querySelectorAll('a.btn-code[data-repo]');
+          if (!btns || !btns.length) return;
+          btns.forEach(function (btn) {
+            var repo = btn.getAttribute('data-repo');
+            if (!repo) return;
+            var url = 'https://api.github.com/repos/' + repo;
+            // ensure star badge exists
+            var sb = btn.querySelector('.star-badge');
+            if (!sb) {
+              sb = document.createElement('span');
+              sb.className = 'star-badge';
+              sb.setAttribute('aria-label', 'GitHub Stars');
+              sb.innerHTML = '<i class="far fa-star" aria-hidden="true"></i> <span class="star-count">—</span>';
+              btn.appendChild(sb);
+            }
+            fetch(url, { cache: 'no-store' })
+              .then(function (res) { return res.ok ? res.json() : null; })
+              .then(function (data) {
+                if (!data || typeof data.stargazers_count === 'undefined') return;
+                var sc = btn.querySelector('.star-count');
+                if (sc) sc.textContent = (data.stargazers_count || 0).toLocaleString();
+              })
+              .catch(function () { /* noop */ });
+          });
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', setStarCounts);
+        } else {
+          setStarCounts();
+        }
+      })();
+    </script>
 
     <!-- Google Analytics (analytics.js) -->
     <script>

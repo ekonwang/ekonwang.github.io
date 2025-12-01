@@ -14,3 +14,54 @@
 
 /* Reduce spacing between English name and Chinese name */
 header h1 { margin: 0 0 8px; }
+
+/* Code button style (borrowed vibe) */
+.publications ol.bibliography li .links a.btn.btn-code {
+  background-color: #24292e;
+  color: #ffffff !important;
+  border-color: #24292e;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 999px;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transition: all .15s ease;
+}
+
+.publications ol.bibliography li .links a.btn.btn-code:hover {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.publications ol.bibliography li .links a.btn.btn-code i {
+  font-size: 0.95em;
+}
+
+/* Star badge within Code button */
+.publications ol.bibliography li .links a.btn.btn-code .star-badge {
+  margin-left: 6px;
+  background-color: #2f363d;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 2px 6px;
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  line-height: 1;
+}
+
+.publications ol.bibliography li .links a.btn.btn-code .star-badge .fa-star {
+  color: #f5c518;
+  font-size: 0.9em;
+}
+
+.publications ol.bibliography li .links a.btn.btn-code .star-badge .star-count {
+  font-variant-numeric: tabular-nums;
+}
