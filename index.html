@@ -91,9 +91,8 @@
                     <a href="https://github.com/ekonwang/GeoVista" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;" data-repo="ekonwang/GeoVista">
                       <i class="fab fa-github" aria-hidden="true"></i>
                       Code
-                      <span class="star-badge" aria-label="GitHub Stars">
-                        <i class="far fa-star" aria-hidden="true"></i>
-                        <span class="star-count">—</span>
+                      <span class="star-badge use-shields" aria-label="GitHub Stars">
+                        <img class="star-img" alt="GitHub stars" src="https://img.shields.io/github/stars/ekonwang/GeoVista.svg?style=flat&label=%E2%98%85&labelColor=2f363d&color=2f363d&maxAge=3600"/>
                       </span>
                     </a>
                   </div>
@@ -118,9 +117,8 @@
                     <a href="https://github.com/AlenjandroWang/ASVR" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;" data-repo="AlenjandroWang/ASVR">
                       <i class="fab fa-github" aria-hidden="true"></i>
                       Code
-                      <span class="star-badge" aria-label="GitHub Stars">
-                        <i class="far fa-star" aria-hidden="true"></i>
-                        <span class="star-count">—</span>
+                      <span class="star-badge use-shields" aria-label="GitHub Stars">
+                        <img class="star-img" alt="GitHub stars" src="https://img.shields.io/github/stars/AlenjandroWang/ASVR.svg?style=flat&label=%E2%98%85&labelColor=2f363d&color=2f363d&maxAge=3600"/>
                       </span>
                     </a>
                   </div>
@@ -166,9 +164,8 @@
                     <a href="https://github.com/ekonwang/VisuoThink" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;" data-repo="ekonwang/VisuoThink">
                       <i class="fab fa-github" aria-hidden="true"></i>
                       Code
-                      <span class="star-badge" aria-label="GitHub Stars">
-                        <i class="far fa-star" aria-hidden="true"></i>
-                        <span class="star-count">—</span>
+                      <span class="star-badge use-shields" aria-label="GitHub Stars">
+                        <img class="star-img" alt="GitHub stars" src="https://img.shields.io/github/stars/ekonwang/VisuoThink.svg?style=flat&label=%E2%98%85&labelColor=2f363d&color=2f363d&maxAge=3600"/>
                       </span>
                     </a>
                   </div>
@@ -270,42 +267,7 @@
       </section>
     </div>
 
-    <!-- GitHub Stars (for Code buttons) -->
-    <script>
-      (function () {
-        function setStarCounts() {
-          var btns = document.querySelectorAll('a.btn-code[data-repo]');
-          if (!btns || !btns.length) return;
-          btns.forEach(function (btn) {
-            var repo = btn.getAttribute('data-repo');
-            if (!repo) return;
-            var url = 'https://api.github.com/repos/' + repo;
-            // ensure star badge exists
-            var sb = btn.querySelector('.star-badge');
-            if (!sb) {
-              sb = document.createElement('span');
-              sb.className = 'star-badge';
-              sb.setAttribute('aria-label', 'GitHub Stars');
-              sb.innerHTML = '<i class="far fa-star" aria-hidden="true"></i> <span class="star-count">—</span>';
-              btn.appendChild(sb);
-            }
-            fetch(url, { cache: 'no-store' })
-              .then(function (res) { return res.ok ? res.json() : null; })
-              .then(function (data) {
-                if (!data || typeof data.stargazers_count === 'undefined') return;
-                var sc = btn.querySelector('.star-count');
-                if (sc) sc.textContent = (data.stargazers_count || 0).toLocaleString();
-              })
-              .catch(function () { /* noop */ });
-          });
-        }
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', setStarCounts);
-        } else {
-          setStarCounts();
-        }
-      })();
-    </script>
+    <!-- GitHub Stars via shields.io (no JS required) -->
 
     <!-- Google Analytics (analytics.js) -->
     <script>

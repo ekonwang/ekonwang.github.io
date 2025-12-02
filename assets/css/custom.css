@@ -65,3 +65,16 @@ header h1 { margin: 0 0 8px; }
 .publications ol.bibliography li .links a.btn.btn-code .star-badge .star-count {
   font-variant-numeric: tabular-nums;
 }
+
+/* When using shields badge image */
+.publications ol.bibliography li .links a.btn.btn-code .star-badge.use-shields {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+.publications ol.bibliography li .links a.btn.btn-code .star-badge.use-shields .star-img {
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  filter: none;
+}
