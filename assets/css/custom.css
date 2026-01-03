@@ -81,8 +81,8 @@ header h1 { margin: 0 0 8px; }
 
 /* Avatar: force perfect circle and consistent sizing */
 .image.avatar img {
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   padding: 0;
@@ -92,14 +92,14 @@ header h1 { margin: 0 0 8px; }
 
 @media print, screen and (max-width: 960px) {
   .image.avatar img {
-    width: 140px;
-    height: 140px;
+    width: 115px;
+    height: 115px;
   }
 }
 
 @media print, screen and (max-width: 480px) {
   .image.avatar img {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
   }
 }
