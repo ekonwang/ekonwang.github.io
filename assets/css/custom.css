@@ -78,3 +78,28 @@ header h1 { margin: 0 0 8px; }
   vertical-align: middle;
   filter: none;
 }
+
+/* Avatar: force perfect circle and consistent sizing */
+.image.avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+@media print, screen and (max-width: 960px) {
+  .image.avatar img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  .image.avatar img {
+    width: 110px;
+    height: 110px;
+  }
+}
