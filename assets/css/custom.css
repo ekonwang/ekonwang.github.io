@@ -103,3 +103,33 @@ header h1 { margin: 0 0 8px; }
     height: 90px;
   }
 }
+
+/* Experience logo styling */
+.exp-logo {
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 5px;
+}
+
+.exp-logo img {
+  display: block;
+  border-radius: 8px;
+}
+
+/* Adjust exp-left margin when logo is present */
+.exp-item .exp-left {
+  margin-left: 0;
+}
+
+@media print, screen and (max-width: 480px) {
+  .exp-logo {
+    margin-right: 15px;
+  }
+
+  .exp-logo img {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
