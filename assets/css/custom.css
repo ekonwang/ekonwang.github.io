@@ -1,6 +1,8 @@
 /* Profile and section details. */
-.image.avatar { display: block; width: 164px; height: 164px; margin-bottom: 22px; border-radius: 50%; overflow: hidden; }
-.image.avatar img { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.65); transform-origin: 50% 46%; }
+.image.avatar { position: relative; display: block; width: 164px; height: 164px; margin-bottom: 22px; border-radius: 50%; overflow: hidden; }
+/* Continue the photo through the narrow top and bottom gaps in the circle. */
+.image.avatar::before { content: ""; position: absolute; inset: 0; background: url("../../pics/Yikun_Profile.jpg") 34.6% center / 110% 100%; }
+.image.avatar img { position: absolute; display: block; left: 50%; top: 50%; width: 110%; max-width: none; height: auto; transform: translate(-48.6%, -47%); mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent); }
 .name-zh { margin-bottom: 14px; color: var(--color-muted); font-size: 21px; line-height: 1.4; letter-spacing: 2px; }
 .profile-role { margin-bottom: 14px; font-size: 15px; }
 .profile-contact { display: grid; gap: 3px; font-size: 12px; overflow-wrap: anywhere; }
