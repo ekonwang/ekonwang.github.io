@@ -1,0 +1,9 @@
+Tool: built-in image_gen
+Input: pics/Yikun_Profile_City.webp
+Output: pics/Yikun_Profile_Sunny.webp
+Source photo: Weixin Image_20260930210850_556_4.jpg
+Input preparation: crop x=232, y=384, width=768, height=768; resize to 640 x 640; WebP quality 85.
+Final delivery: 640 x 640 WebP, quality 85.
+
+Prompt:
+Use case: lighting-weather. Edit this existing square portrait photograph for a small personal academic-homepage avatar. The attached image is the edit target, not merely a reference. Make a SUBTLE, tasteful improvement to the BACKGROUND ONLY so it has a beautiful California-sunshine atmosphere: a clearer luminous blue sky, gentle warm golden late-afternoon sunlight across the existing distant hills and city, a little warm atmospheric haze, inviting airy natural outdoor color. Keep the existing skyline, mountains, railing and their layout recognizable; this is a refined sunny color/lighting treatment, not a new location. Do not add palm trees, beaches, buildings, clouds, text, or other new objects. Avoid orange filters, dramatic sunsets, excessive glow, artificial blur, and oversaturation. Most importantly, preserve the actual photographed person exactly: same face, identity, skin, black sunglasses, hair, expression, pose, shirt, T-shirt, anatomy, edges, and placement. Do not retouch or relight the person. Keep the original square framing and camera perspective exactly, with no zoom or repositioning. His face must remain horizontally centered, its center about 40% down from the top and its width about one sixth of the image width. Preserve the amount of visible upper body and all subject proportions. Produce a photorealistic square edited image, no circular crop or border; the webpage will apply its own circular mask.
