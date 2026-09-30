@@ -7,7 +7,7 @@
 .profile-contact a { color: var(--color-muted); }
 .profile-contact a:hover { color: var(--color-link); }
 .social-icons { display: flex; gap: 4px; margin-top: 15px; }
-.social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 6px; font-size: 20px; }
+.social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; font-size: 20px; }
 .social-icons a:hover { background: var(--color-soft); text-decoration: none; }
 .section-nav { display: grid; gap: 5px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--color-border); }
 .section-nav a { width: fit-content; padding: 3px 0; color: var(--color-muted); font-size: 14px; }
@@ -19,7 +19,7 @@
 
 .exp-item { display: grid; grid-template-columns: 112px minmax(0, 1fr) auto; gap: 22px; align-items: start; }
 .exp-logo { padding-top: 5px; }
-.exp-logo img { display: block; width: 112px; height: auto; padding: 8px; object-fit: contain; background: #fff; border-radius: 5px; }
+.exp-logo img { display: block; width: 112px; height: auto; padding: 8px; object-fit: contain; background: #fff; border-radius: 12px; }
 .exp-left { min-width: 0; }
 .exp-item h3 { margin: 0 0 5px; font-size: 16px; font-weight: 600; }
 .exp-role { font-size: 15px; }
