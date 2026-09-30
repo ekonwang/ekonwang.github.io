@@ -1,135 +1,59 @@
-/* Custom overrides and additions */
+/* Profile and section details. */
+.image.avatar { display: block; margin-bottom: 22px; }
+.image.avatar img { display: block; width: 164px; height: 164px; border-radius: 50%; object-fit: cover; }
+.name-zh { margin-bottom: 14px; color: var(--color-muted); font-size: 21px; line-height: 1.4; letter-spacing: 2px; }
+.profile-role { margin-bottom: 14px; font-size: 15px; }
+.profile-contact { display: grid; gap: 3px; font-size: 12px; overflow-wrap: anywhere; }
+.profile-contact a { color: var(--color-muted); }
+.profile-contact a:hover { color: var(--color-link); }
+.social-icons { display: flex; gap: 4px; margin-top: 15px; }
+.social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 6px; font-size: 20px; }
+.social-icons a:hover { background: var(--color-soft); text-decoration: none; }
+.section-nav { display: grid; gap: 5px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--color-border); }
+.section-nav a { width: fit-content; padding: 3px 0; color: var(--color-muted); font-size: 14px; }
+.section-nav a:hover { color: var(--color-link); }
 
-/* Secondary name (Chinese) under main name */
-.name-zh {
-  font-size: 28px;
-  font-weight: 500;
-  color: #043361;
-  line-height: 1.1;
+.news-list { display: grid; gap: 12px; list-style: none; margin: 0; padding: 0; }
+.news-list li { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 16px; }
+.news-list time { padding-top: 2px; color: var(--color-muted); font-size: 13px; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+.exp-item { display: grid; grid-template-columns: 112px minmax(0, 1fr) auto; gap: 22px; align-items: start; }
+.exp-logo { padding-top: 5px; }
+.exp-logo img { display: block; width: 112px; height: auto; padding: 8px; object-fit: contain; background: #fff; border-radius: 5px; }
+.exp-left { min-width: 0; }
+.exp-item h3 { margin: 0 0 5px; font-size: 16px; font-weight: 600; }
+.exp-role { font-size: 15px; }
+.exp-item p { margin: 6px 0 0; color: var(--color-muted); font-size: 14px; }
+.exp-right { color: var(--color-muted); white-space: nowrap; }
+.exp-right small { font-size: 12px; }
+
+.page-footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--color-border); color: var(--color-muted); text-align: center; }
+.page-footer small { font-size: 12px; }
+#clustrmaps-container { max-width: 360px; margin: 24px auto 0; }
+
+@media (max-width: 1150px) {
+  .exp-item { grid-template-columns: 100px minmax(0, 1fr); gap: 8px 20px; }
+  .exp-logo { grid-row: span 2; }
+  .exp-right { grid-column: 2; }
 }
 
-@media (prefers-color-scheme: dark) {
-  .name-zh { color: #3eb7f0; }
+@media (max-width: 960px) {
+  .image.avatar { margin-bottom: 0; }
+  .image.avatar img { width: 140px; height: 140px; }
+  .name-zh { margin-bottom: 8px; }
+  .profile-role { margin-bottom: 8px; }
+  .social-icons { margin-top: 8px; }
+  .section-nav { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 24px; padding-top: 12px; }
 }
 
-/* Reduce spacing between English name and Chinese name */
-header h1 { margin: 0 0 8px; }
-
-/* Code button style (borrowed vibe) */
-.publications ol.bibliography li .links a.btn.btn-code {
-  background-color: #24292e;
-  color: #ffffff !important;
-  border-color: #24292e;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 999px;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-  transition: all .15s ease;
-}
-
-.publications ol.bibliography li .links a.btn.btn-code:hover {
-  background-color: #000000;
-  border-color: #000000;
-  color: #ffffff !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-}
-
-.publications ol.bibliography li .links a.btn.btn-code i {
-  font-size: 0.95em;
-}
-
-/* Star badge within Code button */
-.publications ol.bibliography li .links a.btn.btn-code .star-badge {
-  margin-left: 6px;
-  background-color: #2f363d;
-  color: #ffffff;
-  border-radius: 999px;
-  padding: 2px 6px;
-  display: inline-flex;
-  gap: 4px;
-  align-items: center;
-  line-height: 1;
-}
-
-.publications ol.bibliography li .links a.btn.btn-code .star-badge .fa-star {
-  color: #f5c518;
-  font-size: 0.9em;
-}
-
-.publications ol.bibliography li .links a.btn.btn-code .star-badge .star-count {
-  font-variant-numeric: tabular-nums;
-}
-
-/* When using shields badge image */
-.publications ol.bibliography li .links a.btn.btn-code .star-badge.use-shields {
-  background: transparent;
-  padding: 0;
-  border-radius: 0;
-}
-.publications ol.bibliography li .links a.btn.btn-code .star-badge.use-shields .star-img {
-  height: 18px;
-  display: inline-block;
-  vertical-align: middle;
-  filter: none;
-}
-
-/* Avatar: force perfect circle and consistent sizing */
-.image.avatar img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  padding: 0;
-  display: block;
-  margin: 0 auto;
-}
-
-@media print, screen and (max-width: 960px) {
-  .image.avatar img {
-    width: 115px;
-    height: 115px;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  .image.avatar img {
-    width: 90px;
-    height: 90px;
-  }
-}
-
-/* Experience logo styling */
-.exp-logo {
-  margin-right: 20px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: flex-start;
-  padding-top: 5px;
-}
-
-.exp-logo img {
-  display: block;
-  border-radius: 8px;
-}
-
-/* Adjust exp-left margin when logo is present */
-.exp-item .exp-left {
-  margin-left: 0;
-}
-
-@media print, screen and (max-width: 480px) {
-  .exp-logo {
-    margin-right: 15px;
-  }
-
-  .exp-logo img {
-    width: 45px !important;
-    height: 45px !important;
-  }
+@media (max-width: 600px) {
+  .image.avatar { margin-bottom: 16px; }
+  .image.avatar img { width: 124px; height: 124px; margin: 0 auto; }
+  .social-icons, .section-nav { justify-content: center; }
+  .section-nav { gap: 8px 18px; margin-top: 20px; }
+  .section-nav a { font-size: 13px; }
+  .news-list { gap: 15px; }
+  .news-list li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .news-list time { padding-top: 0; font-size: 12px; }
+  .exp-item { grid-template-columns: 70px minmax(0, 1fr); gap: 8px 15px; }
 }

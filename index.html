@@ -36,71 +36,76 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <a class="image avatar"><img src="./pics/Yikun_Formal.jpg" alt="avatar" /></a>
-        <h1>(Rick) Yikun Wang</h1>
-        <div class="name-zh">王藝坤</div>
-        <position style="font-size:1.10rem;">Ph.D. Student</position>
-        <br>
-        <a href="https://en.wikipedia.org/wiki/Fudan_University" rel="noopener"><autocolor>Fudan University</autocolor></a>
-        <br>
-        <email>yikunw54@gmail.com &nbsp; yikunwang19@fudan.edu.cn</email>
-        <br>
-        <br>
-        <div class="social-icons">
-          <a style="margin: 0 5px 0 0" href="https://scholar.google.co.uk/citations?hl=en&view_op=list_works&gmla=AH70aAWOWJyNkqpEEpmZcy3S6vctVLKLrmKkswkOwITM3ivjEFYBbnIWlPjUy4_LvLSAN9ub1KH7DvPxEXOfUpPLHw7E&user=4E7YCn4AAAAJ">
-            <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
-          </a>
-          <a style="margin: 0 5px 0 0" href="https://github.com/ekonwang">
-            <i class="fab fa-github"></i>
-          </a>
-          <a style="margin: 0 5px 0 0" href="https://medium.com/@g1547246193">
-            <i class="fab fa-medium"></i>
-          </a>
-          <a style="margin: 0 5px 0 0" href="https://x.com/YikunWangLibra" aria-label="X (Twitter)">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true" fill="currentColor" style="width:1em;height:1em;vertical-align:-0.125em">
-              <path d="M18.244 2H21.5l-7.5 8.576L22 22h-6.59l-5.145-6.15L4 22H.742l7.995-9.147L1 2h6.617l4.594 5.535L18.244 2zM16.99 20h1.837L8.049 4H6.098l10.892 16z"/>
-            </svg>
-          </a>
-          <a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/%E8%89%BA%E5%9D%A4-%E7%8E%8B-546316273/">
-            <i class="fab fa-linkedin"></i>
-          </a>
+      <header class="profile">
+        <div class="image avatar"><img src="./pics/Yikun_Formal.jpg" alt="Yikun Wang" width="164" height="164" /></div>
+        <div class="profile-details">
+          <h1>(Rick) Yikun Wang</h1>
+          <div class="name-zh">王藝坤</div>
+          <p class="profile-role">Ph.D. Student<br><a href="https://en.wikipedia.org/wiki/Fudan_University" rel="noopener">Fudan University</a></p>
+          <div class="profile-contact">
+            <a href="mailto:yikunw54@gmail.com">yikunw54@gmail.com</a>
+            <a href="mailto:yikunwang19@fudan.edu.cn">yikunwang19@fudan.edu.cn</a>
+          </div>
+          <div class="social-icons">
+            <a href="https://scholar.google.co.uk/citations?hl=en&view_op=list_works&gmla=AH70aAWOWJyNkqpEEpmZcy3S6vctVLKLrmKkswkOwITM3ivjEFYBbnIWlPjUy4_LvLSAN9ub1KH7DvPxEXOfUpPLHw7E&user=4E7YCn4AAAAJ" aria-label="Google Scholar" title="Google Scholar">
+              <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/ekonwang" aria-label="GitHub" title="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://medium.com/@g1547246193" aria-label="Medium" title="Medium">
+              <i class="fab fa-medium" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/YikunWangLibra" aria-label="X (Twitter)" title="X (Twitter)">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true" fill="currentColor" style="width:1em;height:1em;vertical-align:-0.125em">
+                <path d="M18.244 2H21.5l-7.5 8.576L22 22h-6.59l-5.145-6.15L4 22H.742l7.995-9.147L1 2h6.617l4.594 5.535L18.244 2zM16.99 20h1.837L8.049 4H6.098l10.892 16z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/%E8%89%BA%E5%9D%A4-%E7%8E%8B-546316273/" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-        <br>
+        <nav class="section-nav" aria-label="Page sections">
+          <a href="#about">About Me</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+        </nav>
       </header>
-      <section>
-        <h2 id="about">About Me <small>[<a href="./assets/CV.pdf">CV</a>]</small></h2>
+      <main>
+        <h2 id="about"><span class="section-emoji" aria-hidden="true">👋</span> About Me <small>[<a href="./assets/CV.pdf">CV</a>]</small></h2>
         <p>Hi, I am a second-year Ph.D. student in <a href="https://en.wikipedia.org/wiki/Fudan_University">Fudan University</a> &amp; SII (Joint Program), currently supervised by <a href="https://scholar.google.com/citations?user=oIz_CYEAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Pengfei Liu</a>. I received my B.S. in Computer Science from Fudan University. Previously, I worked with <a href="https://scholar.google.com/citations?user=XfqR3yYAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Qi Zhang</a>, <a href="https://www.cs.emory.edu/~fliu40/" target="_blank" rel="noopener">Fei Liu</a>, and <a href="https://myownskyw7.github.io/" target="_blank" rel="noopener">Jiaqi Wang</a>.</p>
         <p>My research centers on <strong>Multimodal Interactive Intelligence</strong>, with a particular focus on <strong>Multimodal LLMs</strong> and <strong>LLM agents</strong>. Please feel free to contact me for discussion and collaboration!</p>
 
-        <h2 id="news">🚀 News</h2>
-        <div class="news-container">
-          <p><strong>[Mar. 2026]</strong> Three papers were accepted to ACL 2026: <a href="https://arxiv.org/pdf/2506.07160">GeometryZero</a>, <a href="https://arxiv.org/pdf/2506.09040">ASVR</a>, and <a href="https://arxiv.org/pdf/2509.17743">VideoPro</a>.</p>
-          <p><strong>[Nov. 2025]</strong> We released <a href="https://ekonwang.github.io/geo-vista/">GeoVista</a>, a web-augmented agentic visual reasoning framework for geolocalization.</p>
-          <p><strong>[Jul. 2025]</strong> I joined <a href="https://hunyuan.tencent.com" rel="noopener">Tencent Hunyuan</a> as a research intern, working on frontier visual reasoning models.</p>
-          <p><strong>[Apr. 2025]</strong> <a href="https://arxiv.org/abs/2504.09130">VisuoThink</a> was accepted to ACL 2025 Main.</p>
-          <p><strong>[Aug. 2024]</strong> Two papers were presented at ACL 2024.</p>
-        </div>
+        <h2 id="news"><span class="section-emoji" aria-hidden="true">🚀</span> News</h2>
+        <ul class="news-list">
+          <li><time datetime="2026-03">Mar. 2026</time><span>Three papers were accepted to ACL 2026: <a href="https://arxiv.org/pdf/2506.07160">GeometryZero</a>, <a href="https://arxiv.org/pdf/2506.09040">ASVR</a>, and <a href="https://arxiv.org/pdf/2509.17743">VideoPro</a>.</span></li>
+          <li><time datetime="2025-11">Nov. 2025</time><span>We released <a href="https://ekonwang.github.io/geo-vista/">GeoVista</a>, a web-augmented agentic visual reasoning framework for geolocalization.</span></li>
+          <li><time datetime="2025-07">Jul. 2025</time><span>I joined <a href="https://hunyuan.tencent.com" rel="noopener">Tencent Hunyuan</a> as a research intern, working on frontier visual reasoning models.</span></li>
+          <li><time datetime="2025-04">Apr. 2025</time><span><a href="https://arxiv.org/abs/2504.09130">VisuoThink</a> was accepted to ACL 2025 Main.</span></li>
+          <li><time datetime="2024-08">Aug. 2024</time><span>Two papers were presented at ACL 2024.</span></li>
+        </ul>
 
-        <h2 id="publications" style="margin: 2px 0px 0px;">Selected Publications <small>[<a href="https://scholar.google.co.uk/citations?hl=en&view_op=list_works&gmla=AH70aAWOWJyNkqpEEpmZcy3S6vctVLKLrmKkswkOwITM3ivjEFYBbnIWlPjUy4_LvLSAN9ub1KH7DvPxEXOfUpPLHw7E&user=4E7YCn4AAAAJ">Google Scholar</a>]</small></h2>
+        <h2 id="publications"><span class="section-emoji" aria-hidden="true">📄</span> Selected Publications <small>[<a href="https://scholar.google.co.uk/citations?hl=en&view_op=list_works&gmla=AH70aAWOWJyNkqpEEpmZcy3S6vctVLKLrmKkswkOwITM3ivjEFYBbnIWlPjUy4_LvLSAN9ub1KH7DvPxEXOfUpPLHw7E&user=4E7YCn4AAAAJ">Google Scholar</a>]</small></h2>
         <div class="publications">
           <ol class="bibliography">
             <li>
               <div class="pub-row">
-                <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                <div class="pub-image">
                   <abbr class="badge">arXiv</abbr>
                   <a href="https://arxiv.org/abs/2511.15705" target="_blank">
-                    <img class="teaser" src="./pics/assets/geovista.png" alt="GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization (ArXiv Technical Report)" />
+                    <img class="teaser" loading="lazy" src="./pics/assets/geovista.png" alt="GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization (ArXiv Technical Report)" />
                   </a>
                 </div>
-                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                <div class="pub-details">
                   <div class="title"><a href="https://arxiv.org/abs/2511.15705">GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization</a></div>
                   <div class="author"><strong>Yikun Wang</strong>, Zuyan Liu, Ziyi Wang, Pengfei Liu, Han Hu, Yongming Rao</div>
                   <div class="periodical"><em>ArXiv Technical Report</em></div>
                   <div class="links">
-                    <a href="https://arxiv.org/abs/2511.15705" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-                    <a href="https://ekonwang.github.io/geo-vista/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project</a>
-                    <a href="https://github.com/ekonwang/GeoVista" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;" data-repo="ekonwang/GeoVista">
+                    <a href="https://arxiv.org/abs/2511.15705" class="btn" target="_blank">PDF</a>
+                    <a href="https://ekonwang.github.io/geo-vista/" class="btn" target="_blank">Project</a>
+                    <a href="https://github.com/ekonwang/GeoVista" class="btn btn-code" target="_blank" data-repo="ekonwang/GeoVista">
                       <i class="fab fa-github" aria-hidden="true"></i>
                       Code
                       <span class="star-badge use-shields" aria-label="GitHub Stars">
@@ -111,22 +116,21 @@
                 </div>
               </div>
             </li>
-            <br />
             <li>
               <div class="pub-row">
-                <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                <div class="pub-image">
                   <abbr class="badge">ACL</abbr>
                   <a href="https://arxiv.org/abs/2506.09040" target="_blank">
-                    <img class="teaser" src="./pics/assets/asvr.png" alt="Autoregressive Semantic Visual Reconstruction Helps VLMs Understand Better (ACL 2026)" />
+                    <img class="teaser" loading="lazy" src="./pics/assets/asvr.png" alt="Autoregressive Semantic Visual Reconstruction Helps VLMs Understand Better (ACL 2026)" />
                   </a>
                 </div>
-                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                <div class="pub-details">
                   <div class="title"><a href="https://arxiv.org/abs/2506.09040">Autoregressive Semantic Visual Reconstruction Helps VLMs Understand Better</a></div>
                   <div class="author">Dianyi Wang, Wei Song, <strong>Yikun Wang</strong>, Siyuan Wang, Kaicheng Yu, Zhongyu Wei, Jiaqi Wang</div>
                   <div class="periodical"><em>ACL, 2026</em></div>
                   <div class="links">
-                    <a href="https://arxiv.org/abs/2506.09040" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-                    <a href="https://github.com/AlenjandroWang/ASVR" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;" data-repo="AlenjandroWang/ASVR">
+                    <a href="https://arxiv.org/abs/2506.09040" class="btn" target="_blank">PDF</a>
+                    <a href="https://github.com/AlenjandroWang/ASVR" class="btn btn-code" target="_blank" data-repo="AlenjandroWang/ASVR">
                       <i class="fab fa-github" aria-hidden="true"></i>
                       Code
                       <span class="star-badge use-shields" aria-label="GitHub Stars">
@@ -137,43 +141,41 @@
                 </div>
               </div>
             </li>
-            <br />
             <!--
             <li>
               <div class="pub-row">
-                <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                <div class="pub-image">
                   <abbr class="badge">arXiv</abbr>
                   <a href="https://arxiv.org/abs/2506.07160" target="_blank">
-                    <img class="teaser" src="./pics/assets/geometry-zero.png" alt="GeometryZero (arXiv 2025)" />
+                    <img class="teaser" loading="lazy" src="./pics/assets/geometry-zero.png" alt="GeometryZero (arXiv 2025)" />
                   </a>
                 </div>
-                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                <div class="pub-details">
                   <div class="title"><a href="https://arxiv.org/abs/2506.07160">GeometryZero: Improving Geometry Solving for LLM with Group Contrastive Policy Optimization</a></div>
                   <div class="author"><strong>Yikun Wang</strong>, Yibin Wang, Dianyi Wang, Zimian Peng, Qipeng Guo, Dacheng Tao, Jiaqi Wang</div>
                   <div class="periodical"><em>ArXiv Technical Report, 2025</em></div>
                   <div class="links">
-                    <a href="https://arxiv.org/abs/2506.07160" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+                    <a href="https://arxiv.org/abs/2506.07160" class="btn" target="_blank">PDF</a>
                   </div>
                 </div>
               </div>
             </li>
-            <br />
             -->
             <li>
               <div class="pub-row">
-                <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                <div class="pub-image">
                   <abbr class="badge">ACL</abbr>
                   <a href="https://arxiv.org/abs/2504.09130" target="_blank">
-                    <img class="teaser" src="./pics/assets/visuothink.png" alt="VisuoThink (ACL 2025)" />
+                    <img class="teaser" loading="lazy" src="./pics/assets/visuothink.png" alt="VisuoThink (ACL 2025)" />
                   </a>
                 </div>
-                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                <div class="pub-details">
                   <div class="title"><a href="https://arxiv.org/abs/2504.09130">VisuoThink: Empowering LVLM Reasoning with Multimodal Tree Search</a></div>
                   <div class="author"><strong>Yikun Wang</strong>*, Siyin Wang*, Qinyuan Cheng, Zhaoye Fei, Liang Ding, Qipeng Guo, Dacheng Tao, Xipeng Qiu</div>
                   <div class="periodical"><em>ACL, 2025 (Main)</em></div>
                   <div class="links">
-                    <a href="https://arxiv.org/abs/2504.09130" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-                    <a href="https://github.com/ekonwang/VisuoThink" class="btn btn-sm z-depth-0 btn-code" role="button" target="_blank" style="font-size:12px;" data-repo="ekonwang/VisuoThink">
+                    <a href="https://arxiv.org/abs/2504.09130" class="btn" target="_blank">PDF</a>
+                    <a href="https://github.com/ekonwang/VisuoThink" class="btn btn-code" target="_blank" data-repo="ekonwang/VisuoThink">
                       <i class="fab fa-github" aria-hidden="true"></i>
                       Code
                       <span class="star-badge use-shields" aria-label="GitHub Stars">
@@ -184,59 +186,56 @@
                 </div>
               </div>
             </li>
-            <br />
             <li>
               <div class="pub-row">
-                <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                <div class="pub-image">
                   <abbr class="badge">ACL</abbr>
                   <a href="https://aclanthology.org/2024.acl-long.597/" target="_blank">
-                    <img class="teaser" src="./pics/assets/ual.png" alt="Uncertainty Aware Learning (ACL 2024) figure" />
+                    <img class="teaser" loading="lazy" src="./pics/assets/ual.png" alt="Uncertainty Aware Learning (ACL 2024) figure" />
                   </a>
                 </div>
-                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                <div class="pub-details">
                   <div class="title"><a href="https://aclanthology.org/2024.acl-long.597/">Uncertainty Aware Learning for Language Model Alignment</a></div>
                   <div class="author"><strong>Yikun Wang</strong>*, Rui Zheng*, Liang Ding, Qi Zhang, Dahua Lin, Dacheng Tao</div>
                   <div class="periodical"><em>ACL, 2024 (Main)</em></div>
                   <div class="links">
-                    <a href="https://aclanthology.org/2024.acl-long.597/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+                    <a href="https://aclanthology.org/2024.acl-long.597/" class="btn" target="_blank">PDF</a>
                   </div>
                 </div>
               </div>
             </li>
-            <br />
             <li>
               <div class="pub-row">
-                <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                <div class="pub-image">
                   <abbr class="badge">ACL</abbr>
                   <a href="https://aclanthology.org/2024.acl-srw.32/" target="_blank">
-                    <img class="teaser" src="./pics/assets/rrescue.png" alt="RRescue (ACL SRW 2024)" />
+                    <img class="teaser" loading="lazy" src="./pics/assets/rrescue.png" alt="RRescue (ACL SRW 2024)" />
                   </a>
                 </div>
-                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                <div class="pub-details">
                   <div class="title"><a href="https://aclanthology.org/2024.acl-srw.32/">RRescue: Ranking LLM Responses to Enhance Reasoning Over Context</a></div>
                   <div class="author"><strong>Yikun Wang</strong>*, Rui Zheng*, Haoming Li, Qi Zhang, Tao Gui, Fei Liu</div>
                   <div class="periodical"><em>ACL, 2024 (SRW)</em></div>
                   <div class="links">
-                    <a href="https://aclanthology.org/2024.acl-srw.32/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+                    <a href="https://aclanthology.org/2024.acl-srw.32/" class="btn" target="_blank">PDF</a>
                   </div>
                 </div>
               </div>
             </li>
-            <br />
             <li>
               <div class="pub-row">
-                <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                <div class="pub-image">
                   <abbr class="badge">arXiv</abbr>
                   <a href="https://openreview.net/forum?id=NKuQooVB5X" target="_blank">
-                    <img class="teaser" src="./pics/assets/llmda.png" alt="LLM-DA: Data Augmentation via Large Language Models for Few-Shot Named Entity Recognition" />
+                    <img class="teaser" loading="lazy" src="./pics/assets/llmda.png" alt="LLM-DA: Data Augmentation via Large Language Models for Few-Shot Named Entity Recognition" />
                   </a>
                 </div>
-                <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                <div class="pub-details">
                   <div class="title"><a href="https://openreview.net/forum?id=NKuQooVB5X">LLM-DA: Data Augmentation via Large Language Models for Few-Shot Named Entity Recognition</a></div>
                   <div class="author">Junjie Ye, Nuo Xu, <strong>Yikun Wang</strong>, Jie Zhou, Qi Zhang, Tao Gui, Bingning Wang, Xuanjing Huang</div>
                   <div class="periodical"><em>ArXiv Technical Report</em></div>
                   <div class="links">
-                    <a href="https://openreview.net/forum?id=NKuQooVB5X" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+                    <a href="https://openreview.net/forum?id=NKuQooVB5X" class="btn" target="_blank">PDF</a>
                   </div>
                 </div>
               </div>
@@ -245,32 +244,28 @@
           </ol>
         </div>
 
-        <h2 id="experience">Industry Experience</h2>
+        <h2 id="experience"><span class="section-emoji" aria-hidden="true">💼</span> Industry Experience</h2>
         <div class="exp-container">
           <div class="exp-item">
             <div class="exp-logo">
-              <img src="./pics/tencent_logo.webp" alt="Tencent Logo" style="width: 120px; height: auto; object-fit: contain;">
+              <img src="./pics/tencent_logo.webp" alt="Tencent Logo" width="112" loading="lazy">
             </div>
             <div class="exp-left">
               <h3><a href="https://hunyuan.tencent.com" rel="noopener">Tencent Hunyuan</a>, Shanghai, China</h3>
-              <autocolor>Hunyuan Research Intern</autocolor>
+              <div class="exp-role">Hunyuan Research Intern</div>
               <p>Topic: Frontier visual reasoning model; supervised finetuning and reinforcement learning</p>
             </div>
             <div class="exp-right"><small>Jul. 2025 ~ Dec. 2025</small></div>
           </div>
         </div>
 
-        <hr>
-        <div style="text-align:center; margin-top: 10px;">
-          <small>© Yikun Wang | Last updated: Dec/01/2025</small>
-        </div>
-        <br>
-        <center>
+        <footer class="page-footer">
+          <small>© Yikun Wang · Last updated: Sep. 30, 2026</small>
           <div id="clustrmaps-container">
             <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=0e1633&w=a&t=tt&d=V79PuU9N_eFwgt2Iv0Z7EzwQ5Y-AY_d_XgGbGdzqWq4&co=0b4975&cmo=3acc3a&cmn=ff5353&ct=cdd4d9'></script>
           </div>
-        </center>
-      </section>
+        </footer>
+      </main>
     </div>
 
     <!-- GitHub Stars via shields.io (no JS required) -->
